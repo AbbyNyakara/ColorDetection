@@ -2,6 +2,7 @@
 import cv2 as cv
 
 # Create the videocapture object.
+# by passing 0, it will capture the default camera
 cap = cv.VideoCapture(0)
 
 if not cap.isOpened():
@@ -10,7 +11,7 @@ if not cap.isOpened():
 #vid.read(): This method reads the next video frame from the video source (vid).
 #It returns two values: a boolean ret and the actual frame data frame.
 while True:
-    ret, frame = cap.read()
+    isTrue, frame = cap.read()
 
     # display the frame:
     cv.imshow("Frame", frame)
