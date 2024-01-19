@@ -5,7 +5,7 @@ cap = cv.VideoCapture(0)
 while True:
     isTrue, frame = cap.read()
 
-
+    
 
     cv.imshow("Frame", frame)
 
